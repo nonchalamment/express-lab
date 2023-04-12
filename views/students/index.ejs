@@ -12,8 +12,10 @@
   <ul>
     <% students.forEach(student => { %>
       <li>
-				<%= student.name %> 
-				- 
+				<%= student.name %>
+         taking
+        <%= student.class %>
+				 has
 				<%= student.passed ? 'passed' : 'failed' %>
 			</li>
     <% }) %>
